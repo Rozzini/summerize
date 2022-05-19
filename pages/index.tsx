@@ -2,14 +2,20 @@
 import * as React from "react";
 import HeroSection from "../components/Hero/Hero";
 import NavComponent from "../components/Navigation/NavComponent";
-import NftCollection from "../components/NftCollection/NftCollection";
+import Explore from "../components/Explore/Explore";
+import TopLiveMints from "../components/TopLiveMints/TopLiveMints"
+import Footer from "../components/Footer/Footer"
+import LearnAndEarn from "../components/LearnAndEarn/LearnAndEarn"
 
 export default function Home() {
   return (
-    <article className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 backdrop-blur-lg text-white font-poppins">
+    <article className=" text-black font-poppins bg-gradient-to-tr from-[#FFDC83] via-[#FFB9B9] to-[#00C5E8] ">
       <NavComponent />
       <HeroSection />
-      <NftCollection />
+      <TopLiveMints />
+      <Explore />
+      <LearnAndEarn />
+      <Footer />
     </article>
   );
 }

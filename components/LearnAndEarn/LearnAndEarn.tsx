@@ -1,14 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
-export default function HeroSection() {
-  const data = ["HOME", "GALLERY", "BLOG", "KNET"];
-
+export default function LearnAndEarn() {
   return (
     <div className=" items-center relative  min-h-screen flex justify-around  flex-wrap px-5">
-     
-
       <div className="max-w-2xl relative">
         <h1 className=" text-4xl md:text-4xl font-poppins text-left uppercase">
-          Marketplace to Create, Buy<br></br>& Sell NFTs{" "}
+        Learn and Earn ETH with NFT
         </h1>
         <p className=" text-sm md:text-sm text-left font-poppins my-9">
           Nft Marketplace brings together artists, creators and crypto
@@ -17,17 +12,14 @@ export default function HeroSection() {
         </p>
         <div className="flex justify-between max-w-xs my-5 ">
           <button className="text-white bg-gradient-to-r from-[#EB3349] to-[#F45C43] px-8 py-2 rounded-lg text-xl font-bold flex items-center">
-            Mint NFT
-          </button>
-          <button className="text-[#F45C43] px-8 py-2 text-2xl font-bold flex items-center">
-            Explore
+            Learn More
           </button>
         </div>
       </div>
       <>
         <div className="flex flex-col  bg-white rounded-xl  p-4 relative">
           <div className="relative">
-            <img src="./img/nft4.png" alt="nft-gif" className="rounded-xl" />
+            <img src="./PageImg/img1.png" alt="nft-gif" className="rounded-xl" />
           </div>
           <div className="flex flex-col  rounded-b-xl py-4 ">
             <div className="flex justify-between"></div>

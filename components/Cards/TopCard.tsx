@@ -1,64 +1,54 @@
-import { EthIcon } from "../EthIcon/EthIcon";
 interface Props {
-  name: string;
   image: string;
-  price: number;
-  percentage: number;
-  total: number;
-  id: number;
 }
 
-export const TopCard = () => {
+export const TopCard = ({ image }: Props) => {
   return (
-    <div className="w-96 h-screen relative flex justify-center items-center">
-      <div className="relative bottom-0 left-10 w-96 ">
-        <div className="flex flex-col text-sm  rounded-b-xl py-3 bg-white text-black">
-          <div className="flex justify-between ">
-            <div className="flex items-center">
-              <div className="flex flex-col ml-3">
-                <h1>Virtual Art</h1>
-                <p>by @wwwzy</p>
-              </div>
-            </div>
-            <div className="flex fill-pink-500 text-pink-500 text-lg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
-              80
-            </div>
-          </div>
-          <div className="flex justify-between pt-6">
-            <h1 className="text-gray-300 text-lg">Price</h1>
-            <p className="flex items-center">
-              4.55
-              <EthIcon />
-            </p>
-          </div>
-          <button className="mx-1 mt-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-lg font-bold rounded-lg p-[2px] ">
-            <div className="bg-black text-white py-4 rounded-lg">Mint</div>
+    <div className="relative w-[394px] h-[474px] mt-12 mb-12 mx-4">
+      {/* text */}
+      <div className="absolute bottom-0 bg-white shadow-2xl bg-opacity-70 w-[394px] h-[270px] rounded-lg">
+        <div className="absolute left-[26px] top-[20px]">
+          <img
+            src="../NftCard/Like.png"
+            alt="title"
+            className="pt-4 mx-auto rounded-t-xl sm:rounded-none rounded-lg"
+          />
+          <h1 className="text-black pl-1">234</h1>
+        </div>
+
+        <div className="absolute top-[140px] left-[26px] text-black">
+          <h1 className="font-semibold text-lg">Courtney Henry</h1>
+          <p className="text-[#52575C]">by <p className="inline text-[#F45C43]">Randy John</p></p>
+        </div>
+
+        <div className="absolute top-[145px] right-[27px]">
+          <button className="text-white bg-gradient-to-r from-[#EB3349] to-[#F45C43] px-8 py-2 rounded-lg text-xl font-bold flex items-center">
+            Mint
           </button>
         </div>
-      </div>
-      <div className="absolute top-96 right-0">
-          <img
-            src="https://res.cloudinary.com/ddcg0rzlo/image/upload/v1652470298/9StaF0UBJfih_df0248.gif"
-            alt="nft-gif"
-            width="242"
-            height="242"
-            className="rounded-xl"
+
+        <div className="absolute left-[25px] bottom-[20px]">
+        <img
+            src="../NftCard/cryp.png"
+            alt="title"
+            className="pt-4 mx-auto rounded-t-xl sm:rounded-none rounded-lg"
           />
         </div>
+
+        <div className="absolute left-[78px] bottom-[20px]">
+          <h2 className="text-[#52575C] text-sm">Price</h2>
+          <h1 className="text-black">10.50 USDC = 10.50USD</h1>
+        </div>
+      </div>
+
+      {/* Image */}
+      <div className="absolute bg-white  shadow-xl w-[272px] h-[326px] rounded-lg right-[16px] top-0">
+        <img
+          src={image}
+          alt="title"
+          className="pt-4 mx-auto rounded-t-xl sm:rounded-none rounded-lg"
+        />
+      </div>
     </div>
   );
 };

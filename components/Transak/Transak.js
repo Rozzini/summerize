@@ -27,8 +27,8 @@ function openTransak() {
 export default function Transak() {
     return (
         <div>
-            <button className="pt-2" onClick={() => openTransak()}>
-                    open transak
+            <button className="text-black-300 px-3 py-2 font-medium" onClick={() => openTransak()}>
+                    Buy Crypto
                 </button>
         </div>
     );
