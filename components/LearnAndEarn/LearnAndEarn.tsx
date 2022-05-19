@@ -17,7 +17,7 @@ export default function LearnAndEarn() {
         </div>
       </div>
       <>
-        <div className="flex flex-col  bg-white rounded-xl  p-4 relative">
+        <div className="flex flex-col rounded-xl  p-4 relative">
           <div className="relative">
             <img src="./PageImg/img1.png" alt="nft-gif" className="rounded-xl" />
           </div>
