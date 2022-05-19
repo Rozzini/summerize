@@ -8,7 +8,9 @@ export const Card = ({ image }: Props) => {
       <img
         src={image}
         alt="title"
-        className="pt-4 mx-auto rounded-t-xl sm:rounded-none rounded-lg"
+        max-width="284px"
+        max-height="179px"
+        className="max-w-[284px] max-h-[195px] pt-4 mx-auto rounded-t-xl sm:rounded-none rounded-lg"
       />
       <h1 className="pl-2 font-semibold">Jacob Jones</h1>
       <div className="absolute top-[210px] left-[9px]">
