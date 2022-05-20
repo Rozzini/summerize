@@ -9,13 +9,13 @@ import LearnAndEarn from "../components/LearnAndEarn/LearnAndEarn"
 
 export default function Home() {
   return (
-    <article className=" text-black font-poppins bg-gradient-to-tr from-[#FFDC83] via-[#FFB9B9] to-[#00C5E8] ">
+    <div className=" text-black font-poppins bg-gradient-to-tr from-[#FFDC83] via-[#FFB9B9] to-[#00C5E8] ">
       <NavComponent />
       <HeroSection />
       <TopLiveMints />
       <Explore />
       <LearnAndEarn />
       <Footer />
-    </article>
+    </div>
   );
 }

@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useRef, useState } from "react";
-import useOnClickOutside from "../useOnClickOutside";
+import Link from 'next/link'
 import Auth from "../Auth/Auth";
 import Transak from "../Transak/Transak";
 
@@ -20,10 +19,6 @@ const navData = [
 ];
 
 export default function NavComponent() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isModalOpen, setModalOpen] = useState(false);
-  useOnClickOutside(ref, () => setModalOpen(false));
-
   return (
     <div className="sticky w-11/12 mx-auto pt-8">
       <div className="bg-white rounded-xl relative flex items-center justify-between h-16">
@@ -54,6 +49,14 @@ export default function NavComponent() {
                 Blog
               </a>
               <Transak />
+
+              <a
+                href="/profile"
+                className="text-black-300 px-3 py-2 font-medium"
+              >
+                Profile
+              </a>
+
               <Auth />
         </div>
       </div>
